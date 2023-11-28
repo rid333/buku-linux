@@ -3,6 +3,8 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage[a4paper, left=4cm,top=4cm,right=3cm,bottom=3cm,bindingoffset=0.5cm]{geometry}
+\renewcommand*\contentsname{Daftar Isi}
+
 
 % Title Page 
 \title{\Huge \textbf{Pengantar Linux} \\ \huge Pengenalan Sistem Operasi GNU/Linux}
@@ -10,8 +12,43 @@
 
 \begin{document}
 
-% Title
+
+%%%%%%%%%%%%%%%%%%
+% Book frontpage %
+%%%%%%%%%%%%%%%%%%
+
+\frontmatter
+
 \maketitle
+
+\chapter*{Kata Pengantar}
+
+Selamat datang di buku Pengantar Linux. Buku ini ditujukan untuk pemula yang ingin terjun pada dunia sistem operasi GNU/Linux ataupun profesional yang ingin menyegarkan kembali pengetahuannya terkait GNU/Linux. \\
+
+dst...
+
+\begin{flushright}\noindent
+	Makassar, Desember 2023
+\end{flushright}
+
+\tableofcontents
+
+
+%%%%%%%%%%%%%
+% Main Page %
+%%%%%%%%%%%%%
+
+\mainmatter
+
+\include{Bab1_Sejarah}
+
+\include{Bab2_Struktur_File}
+
+\include{Bab3_Desktop}
+
+\include{Bab4_Linux_Shell}
+
+\include{Bab5_Software}
 
 
 \end{document}
